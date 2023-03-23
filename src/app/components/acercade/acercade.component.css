@@ -1,0 +1,48 @@
+.row {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+div {
+    background-color: #010c1a;
+    text-align: center;
+    color: aliceblue;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*etiqueta nombre*/
+#nombre {
+    font-weight: bold;
+    margin-top: 5em;
+}
+#profesion {
+    margin-top: -1em;
+}
+
+/*Estilo foto de perfil*/
+@media (min-width:576px) {
+    #fotodeperfil {
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        /*-- box-shadow: 3px 3px 3px grey; --*/ /*-- saco el sombreado */
+        left: 5%;
+        top: 240px;
+        border: 3px solid #010c1a;
+    }
+}
+
+@media (max-width:575px) {
+    #fotodeperfil {
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 35%;
+        top: 220px;
+        border: 3px solid #010c1a;
+    }
+}

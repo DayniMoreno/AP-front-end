@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.redes {
+    margin-right: 0.5em
+}
+.redes img {
+    margin: 2px;
+}
+.redes button {
+    margin: 5px;
+}
+
+#logoAP {
+    width: 150px;
+}
+
+img {
+    width: 30px;
+}
+
+.container {
+    height: 60px;
+}
+
+.redes a img:hover {
+    transform: scale(1.1);
+}
+
+/* Para celular */
+@media (max-width:575px) {
+    .container {
+        flex-direction: column;
+    }
+    .redes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-left: -8px;
+        margin-top: -15px;
+    }
+    .redes img {
+        margin: 0.2em;
+    }
+}
