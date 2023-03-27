@@ -1,0 +1,87 @@
+<div class="row" id="educacion">
+    <h2>Educación</h2>
+
+    <div class="col-lg-2" *ngIf="isLogged">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" >
+            Nueva Educacion
+        </button>
+    </div>
+
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11" id="cartas">
+        <div>
+            <figure>
+                <img src="../../../assets/inti.png" alt="inti">
+                <figcaption>
+                    <h3>Full Stack Developer</h3> - <h5>2023</h5>
+                    <p>INTI</p>
+                </figcaption>
+            </figure>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editdu/Educacion.id">
+                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete">
+                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+            </td>
+        </div>
+        <div>
+            <figure>
+                <img src="../../../assets/comahue.png" alt="comahue">
+                <figcaption>
+                    <h3>Ingeniero en petróleo</h3> - <h5>2023</h5>
+                    <p>Universidad Nacional del Comahue</p>
+                </figcaption>
+            </figure>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editdu/Educacion.id">
+                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete">
+                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+            </td>
+        </div>
+        <div>
+            <figure>
+                <img src="../../../assets/udenar.png" alt="udenar">
+                <figcaption>
+                    <h3>Diseño grafico</h3> - <h5>2013</h5>
+                    <p>Universidad de Nariño</p>
+                </figcaption>
+            </figure>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editdu/Educacion.id">
+                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete">
+                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+            </td>
+        </div>
+        
+    <!--    <ul>
+            <li>
+                <h3>Full Stack Developer</h3>
+                 - <h5>2023</h5>
+            </li>
+            <p>INTI</p>
+        </ul>
+        <ul>
+            <li>
+                <h3>Ingeniero en petróleo</h3>
+                 - <h5>2023</h5>
+            </li>
+            <p>Universidad Nacional del Comahue</p>
+        </ul>
+        <ul>
+            <li>
+                <h3>Diseño grafico</h3>
+                 - <h5>2013</h5>
+            </li>
+            <p>Universidad de Nariño</p>
+        </ul> 
+    -->
+    </div>
+</div>
